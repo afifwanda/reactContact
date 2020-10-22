@@ -1,0 +1,149 @@
+.home-container{
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4d9ec;
+}
+
+.inner-box{
+  background-color: white;
+  width: 70vw;
+  height: 80vh;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+ ;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.right-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-title-container{
+  font-family: 'Retroica';
+  font-size: large;
+  color: rgb(38, 38, 38);
+  margin-bottom: 2%;
+}
+
+.image-login{
+  height: 100%;
+  width: 80%;
+}
+
+.image-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-button-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+}
+
+.form-container{
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .home-container{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4d9ec;
+  }
+
+  .wrapper-right{
+    transform: scale(0.8);
+  }
+  
+  .inner-box{
+    background-color: white;
+    width: 70vw;
+    height: 80vh;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+   ;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-container{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+  }
+  
+  .right-container{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .login-title-container{
+    font-family: 'Retroica';
+    font-size: small;
+    text-align: center;
+    color: rgb(38, 38, 38);
+    margin-bottom: 2%;
+  }
+  
+  .image-login{
+    transform: scale(0.5);
+  }
+  
+  .image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-button-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+  }
+  
+  .form-container{
+    width: 100%;
+  }
+}
