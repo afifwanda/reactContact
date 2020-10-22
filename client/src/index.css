@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Retroica';
+  src: url("/client/public/assets/Retroica.ttf");
+  font-weight: normal;
+  font-style: normal;
+};
+@font-face {
+  font-family: 'Coolvetica';
+  src: url("/client/src/assets/coolvetica.ttf");
+  font-weight: normal;
+  font-style: normal;
+};
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

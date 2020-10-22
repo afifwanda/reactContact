@@ -23,8 +23,8 @@ function Home(){
               <Button
                 className='btns'
                 buttonStyle='btn--outline'
-                buttonSize='btn--large'
-              >Learn More</Button>
+                buttonSize='btn--medium'
+              >Get Started</Button>
               </Link>
             </div>
           </div>
