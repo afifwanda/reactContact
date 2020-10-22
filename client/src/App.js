@@ -24,6 +24,16 @@ const routes = [
     exact: true,
     children: <Login />
   },
+  {
+    path: '/admin',
+    exact: true,
+    children: <Admin />
+  },
+  {
+    path: '/add',
+    exact: true,
+    children: <Add />
+  },
 ]
 
 function App() {

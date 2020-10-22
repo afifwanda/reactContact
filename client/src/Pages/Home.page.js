@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import image from '../assets/croods.png';
 import '../Styles/home.style.css';
 import Button from '../Components/Button.component';
-import {Fade} from 'react-awesome-reveal'
+import {Fade} from 'react-awesome-reveal';
 
 function Home(){
   

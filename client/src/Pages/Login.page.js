@@ -22,22 +22,25 @@ function Login(){
                 <div className="form-group">
                   <label for="Title">Username</label>
                   <input 
-                    type="title" 
+                    type="text" 
                     className="form-control" 
-                    id="title" 
-                    placeholder="Enter Title" 
+                    id="username" 
+                    placeholder="Enter Username" 
                   />
                 </div>
                 <div className="form-group">
                   <label for="content">Password</label>
                   <input
+                    type='password'
                     className="form-control" 
-                    rows="3" id="content" 
-                    placeholder="Enter Content" 
+                    id="password" 
+                    placeholder="password" 
                   />
                 </div>
                 <div className="login-button-container">
-                  <button type="button" className="btn btn-warning">Login</button>
+                  <Link to='/admin'>
+                    <button type="button" className="btn btn-warning">Login</button>
+                  </Link>
                 </div>
               </form>
             </div>
