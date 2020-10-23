@@ -1,4 +1,4 @@
-.home-container{
+.login-container{
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
@@ -44,6 +44,7 @@
   font-size: large;
   color: rgb(38, 38, 38);
   margin-bottom: 2%;
+  text-align: center;
 }
 
 .image-login{
@@ -124,7 +125,7 @@
     margin-bottom: 2%;
   }
   
-  .image-login{
+  .image-logins{
     transform: scale(0.5);
   }
   

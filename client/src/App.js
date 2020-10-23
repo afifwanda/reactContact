@@ -6,6 +6,7 @@ import {
   Route,
 } from 'react-router-dom';
 import store from './Store/index';
+import GuardRoute from './Helpers/GuardRoute';
 
 import Home from './Pages/Home.page';
 import Login from './Pages/Login.page';
@@ -23,17 +24,7 @@ const routes = [
     path: '/login',
     exact: true,
     children: <Login />
-  },
-  {
-    path: '/admin',
-    exact: true,
-    children: <Admin />
-  },
-  {
-    path: '/add',
-    exact: true,
-    children: <Add />
-  },
+  }
 ]
 
 function App() {
@@ -45,10 +36,15 @@ function App() {
           {
             routes.map(element=>{
               return(
-                <Route {...element}/>
+                <Route 
+                key={element.children}
+                {...element}/>
               )
             })
           }
+          <GuardRoute exact path='/admin' component={Admin} />
+          <GuardRoute exact path='/add' component={Add} />
+          <GuardRoute exact path='/edit/:id' component={Edit} />
         </Switch>
       </div>
     </Router>

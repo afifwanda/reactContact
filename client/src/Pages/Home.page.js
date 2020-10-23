@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import image from '../assets/croods.png';
 import '../Styles/home.style.css';
@@ -31,7 +31,7 @@ function Home(){
         </div>
         <div className='right-container'>
           <div className='image-container'>
-            <img className='image-homepage' src={image} />
+            <img className='image-homepage' alt='img' src={image} />
           </div>
         </div>
       </Fade>
