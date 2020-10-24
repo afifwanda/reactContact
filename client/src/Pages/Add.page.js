@@ -28,6 +28,7 @@ function Add(){
       .then(response=>response.json())
       .then(response=>{
         setPhoto(`${baseUrl}/${response.imageUrl}`);
+        setCheck(true)
       })
       .catch(err=>{
         console.log(err)
@@ -51,7 +52,7 @@ function Add(){
     })
     .then((willAdd) => {
       if (willAdd) {
-        setCheck(true);
+        setCheck(false);
         dispatch(addContact(id,firstName,lastName,age,photo))
         history.push('/admin')
         swal("success!", {

@@ -13,7 +13,7 @@ function Home(){
         <div className='left-container'>
           <div className='sub-left-container'>
             <div className='title-container'>
-              <h1>Kontakt!</h1>
+              <h1 data-testid='home-title'>Kontakt!</h1>
             </div>
             <div className='text-container'>
               <h2>Organized your contact easy like 1,2,3</h2>

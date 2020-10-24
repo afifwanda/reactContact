@@ -55,7 +55,7 @@ Link{
 
 .nav-item {
   height: 80px;
-  font-family: 'Coolvetica';
+  font-family: 'Coolvetica','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav-links {
@@ -114,12 +114,14 @@ Link{
     padding: 2rem;
     width: 100%;
     display: table;
+    cursor: pointer;
   }
 
   .nav-links:hover {
     background-color: #fff;
     color: #242424;
     border-radius: 0;
+    cursor: pointer;
   }
 
   .navbar-logo {

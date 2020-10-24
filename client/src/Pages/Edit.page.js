@@ -29,6 +29,7 @@ function Edit(){
       .then(response=>response.json())
       .then(response=>{
         setPhoto(`${baseUrl}/${response.imageUrl}`);
+        setCheck(true)
       })
       .catch(err=>{
         console.log(err)
@@ -52,7 +53,7 @@ function Edit(){
     })
     .then((willAdd) => {
       if (willAdd) {
-        setCheck(true);
+        setCheck(false);
         dispatch(editContact(contactId,firstName,lastName,age,photo))
         history.push('/admin')
         swal("success!", {

@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,100&display=swap');
 
 @font-face {
   font-family: 'Retroica';
-  src: url("/client/public/assets/Retroica.ttf");
+  src: url("/assets/Retroica.ttf");
   font-weight: normal;
   font-style: normal;
 };
 @font-face {
   font-family: 'Coolvetica';
-  src: url("/client/src/assets/coolvetica.ttf");
+  src: url("/assets/coolvetica.ttf");
   font-weight: normal;
   font-style: normal;
 };

@@ -104,3 +104,10 @@ export const deleteContact = (id) => {
     })
   }
 }
+
+export const findContact = (keyword) => ({
+  type: 'SEARCH_CONTACT',
+  payload: {
+    keyword
+  }
+})

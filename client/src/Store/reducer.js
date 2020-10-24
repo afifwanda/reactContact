@@ -1,6 +1,7 @@
 const initialState = {
   contact : [],
   detailContact : [],
+  searchContact : [],
 }
 
 const reducer = (state = initialState,action) =>{
@@ -8,9 +9,7 @@ const reducer = (state = initialState,action) =>{
     case "GET_CONTACT":
       return{...state, contact : action.payload.contacts};
     case "ADD_CONTACT":
-      console.log(action.payload.newContact)
       let newContacts = state.contact.concat(action.payload.newContact);
-      console.log(newContacts,'ini contacts')
       return {...state, contact: newContacts}
     case "DETAIL_CONTACT":
       let newDetailContact = state.contact.filter(obj => {
@@ -18,14 +17,20 @@ const reducer = (state = initialState,action) =>{
       });
       return {...state, detailContact: newDetailContact}
     case "EDIT_CONTACT":
-      console.log(action.payload.editedContact)
       let newEditedContact = state.contact.map(obj=>action.payload.editedContact.find(o=>o.id === obj.id)||obj);
-      return {...state, article: newEditedContact}
+      return {...state, contact: newEditedContact}
     case "DELETE_CONTACT":
+      console.log()
       let afterDeletedContact = state.contact.filter(function(el){
         return el.id !== action.payload.deletedContact;
       })
-      return {...state, article: afterDeletedContact}
+      console.log(afterDeletedContact)
+      return {...state, contact: afterDeletedContact}
+    case "SEARCH_CONTACT":
+      let newResultContact = state.contact.filter(obj => {
+        return obj.firstName.toLowerCase().match(action.payload.keyword.toLowerCase())
+      });
+      return {...state, searchContact: newResultContact};
     default:
       return state
   }

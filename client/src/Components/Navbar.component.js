@@ -35,7 +35,10 @@ function Navbar(){
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/' 
+            className='navbar-logo'
+            onClick={closeMobileMenu} 
+            style={{ color: '#FFF', textDecoration: 'none' }}>
             Kontakt !
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -43,12 +46,19 @@ function Navbar(){
           </div>
           <ul className={click? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to="/admin" className='nav-links' onClick={closeMobileMenu}>
+              <Link to="/admin" 
+               className='nav-links'
+               onClick={closeMobileMenu}
+               style={{ color: '#FFF', textDecoration: 'none' }}
+               >
                 DASHBOARD
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to="/add" className='nav-links' onClick={closeMobileMenu}>
+              <Link to="/add" 
+               className='nav-links' 
+               onClick={closeMobileMenu}
+               style={{ color: '#FFF', textDecoration: 'none' }}>
                 ADD CONTACT
               </Link>
             </li>
